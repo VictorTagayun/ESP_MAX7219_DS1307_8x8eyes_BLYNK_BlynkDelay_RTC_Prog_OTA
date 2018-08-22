@@ -30,9 +30,9 @@ RTC_DS1307 ds1307_rtc;
 
 // MAX7219
 #include "LedControl.h" //  need the library
-#define PIN_EYES_DIN 13
-#define PIN_EYES_CS 12
-#define PIN_EYES_CLK 14
+#define PIN_EYES_DIN 13 // D7
+#define PIN_EYES_CS 12  // D6
+#define PIN_EYES_CLK 14 // D5
 LedControl lc = LedControl(PIN_EYES_DIN, PIN_EYES_CLK, PIN_EYES_CS, 2);
 int ledintensity = 1; // LED Intensity 0-15
 
